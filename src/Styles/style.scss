@@ -29,7 +29,8 @@ $sky: "#15a6ff";
   color: grey;
 }
 input:focus-visible,
-input:focus {
+input:focus,
+textarea:focus {
   box-shadow: none !important;
 }
 .hover-shade:hover {

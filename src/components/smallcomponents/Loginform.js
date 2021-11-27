@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const Loginform = (props) => {
+const Loginform = () => {
   const notify = (message) => {
     toast.error(message, {
       theme: "colored",
@@ -32,7 +32,6 @@ const Loginform = (props) => {
     });
     navigate("/");
   }
-
   return (
     <div>
       <div className="row py-5 my-5">
@@ -64,7 +63,6 @@ const Loginform = (props) => {
                 type="submit"
                 className="btn text-white br-8 px-5 hover-shade py-1 bg-sky zoom-in mt-lg-3"
               >
-                {/* {isLoading && <i className="mr-1 fa fa-refresh fa-spin"></i>}{" "} */}
                 Login
               </button>
             </div>

@@ -1,18 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
-// components
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Login } from "./components/auth/Login";
 import PrivateRoute from "./middlewares/Authenticated";
 import Dashboard from "./components/Dashboard";
 import "./Styles/style.scss";
 import { Provider } from "react-redux";
 import store from "./store.js";
-
 function App(props) {
   return (
     <Provider store={store}>
@@ -42,5 +35,4 @@ function App(props) {
     </Provider>
   );
 }
-
 export default App;

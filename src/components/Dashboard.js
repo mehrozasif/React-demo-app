@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
 import Blogs from "./Blogs/Blogs";
 import AddBlogs from "./smallcomponents/AddBlogs";
 import Header from "./smallcomponents/Header";
@@ -18,16 +16,11 @@ const Dashboard = () => {
       theme: "colored",
     });
   };
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
   const [blogs, setBlogs] = useState([]);
-
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-
   const onSubmitBlog = (e) => {
     e.preventDefault();
-
     if (title == "") {
       info("Please enter  title");
       return;
@@ -46,8 +39,6 @@ const Dashboard = () => {
       return;
     }
   };
-
-  const state = useSelector((state) => state);
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <div>
@@ -60,13 +51,12 @@ const Dashboard = () => {
             </div>
             <div className="col-12 text-center my-3">
               <button
-                className="ml-auto bg-sky border-0 text-white px-5 br-15 py-1 py-xxl-2"
+                className="ml-auto bg-sky border-0 hover-shade text-white px-5 br-15 py-1 py-xxl-2"
                 onClick={() => setModalShow(true)}
               >
                 Add Blog <span className="font-weight-bold">+</span>
               </button>
             </div>
-
             <img
               className="position-absolute mt-5 blue-ball d-md-block d-none"
               src={blue_Png}

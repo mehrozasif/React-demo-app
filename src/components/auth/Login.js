@@ -2,7 +2,7 @@ import React from "react";
 import yellow_Png from "../../assets/images/yellowball.png";
 import blue_Png from "../../assets/images/blueball.png";
 import Loginform from "../smallcomponents/Loginform";
-export const Login = (props) => {
+export const Login = () => {
   return (
     <React.Fragment>
       <div className="container-fluid">
@@ -25,7 +25,7 @@ export const Login = (props) => {
                   src={blue_Png}
                   alt="smallblue_ball"
                 />
-                <Loginform {...props} />
+                <Loginform />
               </div>
             </div>
           </div>

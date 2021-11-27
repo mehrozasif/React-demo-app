@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import blog_demo from "../../assets/images/blogdemo.jpg";
 const Blogs = (props) => {
   return (

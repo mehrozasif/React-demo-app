@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 function PrivateRoute({ children }) {
   const auth = localStorage.getItem("login") ? true : false;
