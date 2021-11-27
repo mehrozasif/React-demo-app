@@ -1,0 +1,67 @@
+$sky: "#15a6ff";
+.main-bg {
+  background-image: url(../assets/images/blue.png);
+  background-position-y: top;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.br-15 {
+  border-radius: 15px !important;
+  -webkit-border-radius: 15px !important;
+}
+.br-8 {
+  border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+}
+.w-fit {
+  width: fit-content;
+}
+.b-d-sky {
+  border: 5px solid #2fadfc !important;
+}
+.text-left {
+  text-align: left;
+}
+
+.text-grey {
+  color: grey;
+}
+input:focus-visible,
+input:focus {
+  box-shadow: none !important;
+}
+.hover-shade:hover {
+  box-shadow: 1px 1px 20px 1px #dafdfe !important;
+}
+.bg-sky {
+  background: #15beff;
+}
+.bg-lighter {
+  background-color: #b1e0fd;
+}
+.over-flow-none {
+  overflow: hidden;
+}
+.bg-sky:hover {
+  background: #0690c7;
+}
+.shade {
+  box-shadow: 1px 1px 16px 1px #0303031c;
+}
+.yellow-ball {
+  bottom: -30%;
+  left: -10%;
+  width: 20vw;
+}
+.blue-ball {
+  top: 3%;
+  right: -1%;
+  width: 10vw;
+}
+.small-blue-ball {
+  top: 38%;
+  right: 2%;
+  width: 5vw;
+}
