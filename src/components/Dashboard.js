@@ -58,7 +58,7 @@ const Dashboard = () => {
             <div className="bg-lighter mx-auto py-2">
               <h1 className="font-weight-bold text-center mb-0">BLOGS</h1>
             </div>
-            <div className="col-12 text-right my-3">
+            <div className="col-12 text-center my-3">
               <button
                 className="ml-auto bg-sky border-0 text-white px-5 br-15 py-1 py-xxl-2"
                 onClick={() => setModalShow(true)}
