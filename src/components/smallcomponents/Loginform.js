@@ -38,7 +38,7 @@ const Loginform = () => {
         <div className="col-10 text-left col-md-8 m-auto p-4">
           <h4 className="font-weight-bold text-black mb-3">Login</h4>
           <form onSubmit={handleSubmit}>
-            <div className="form-group my-2">
+            <div className="form-group my-xl-2 my-4">
               <label className="text-grey">Email</label>
               <input
                 type="email"
@@ -48,7 +48,7 @@ const Loginform = () => {
                 placeholder="Enter email"
               />
             </div>
-            <div className="form-group my-2">
+            <div className="form-group my-xl-2 my-4">
               <label className="text-grey">Password</label>
               <input
                 type="password"

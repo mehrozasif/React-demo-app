@@ -51,10 +51,10 @@ const Dashboard = () => {
             </div>
             <div className="col-12 text-center my-3">
               <button
-                className="ml-auto bg-sky border-0 hover-shade text-white px-5 br-15 py-1 py-xxl-2"
+                className="ml-auto bg-sky border-0 font-weight-bold hover-shade text-white px-5 br-15 py-1 py-xxl-2"
                 onClick={() => setModalShow(true)}
               >
-                Add Blog <span className="font-weight-bold">+</span>
+                Add Blog <span className="fa fa-plus small"></span>
               </button>
             </div>
             <img

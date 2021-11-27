@@ -10,7 +10,9 @@ function Header() {
     <div className="shade">
       <Navbar bg="lighter" className="text-white" expand="lg">
         <Container>
-          <Navbar.Brand>Dashboard</Navbar.Brand>
+          <Navbar.Brand>
+            <h4 className="mb-0">Dashboard</h4>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse
             className="justify-content-end"
